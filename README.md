@@ -1,3 +1,3 @@
-# MyCalculator
+# Mittwoch Gruppe 
 
 
