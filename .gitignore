@@ -1,28 +1,30 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+// CalculatorSwitch.cc
+// Simple arithmetic calculator using switch() selection.
 
-# Precompiled Headers
-*.gch
-*.pch
+#include <iostream>
+using namespace std;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+int main()
+{
+   float a, b, result;
+   char operation;
+ 
+   // Get numbers and mathematical operator from user input
+   cin >> a >> operation >> b;
 
-# Fortran module files
-*.mod
+   // Character constants are enclosed in single quotes
+   switch(operation)
+   {
+   case '+':
+         result = a + b;
+         break;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+   default:
+         cout << "Invalid operation. Program terminated." << endl;
+         return -1;
+   }
 
-# Executables
-*.exe
-*.out
-*.app
+   // Output result
+   cout << result << endl;
+   return 0;
+}
